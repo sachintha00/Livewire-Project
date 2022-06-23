@@ -24,7 +24,6 @@
     </head>
     <body class="antialiased">
         <h1>Livewire</h1>
-
         @livewireScripts
     </body>
 </html>

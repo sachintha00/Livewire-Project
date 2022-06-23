@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ParamComponent;
 use App\Http\Livewire\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product',Product::class);
+// Route::get('livewire',function(){
+//     return view('layouts.app');
+// });
+
+Route::get('livewire',Product::class);
+Route::get('livewire-param/{param?}',ParamComponent::class);

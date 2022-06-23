@@ -10,6 +10,7 @@ class Product extends Component
     public $title;
     public $name;
     public $infos = [];
+    public $mobile;
 
     public function mount(){
         $this->infos[] = 'Application is mounting...';
@@ -20,19 +21,19 @@ class Product extends Component
     }
 
     public function updating($name,$value){
-        $this->infos[] = 'Application is updating...';
+        $this->infos[] = 'Application is updating... name: '.$name.' value: '.$value;
     }
 
     public function updated($name,$value){
-        $this->infos[] = 'Application is updated';
+        $this->infos[] = 'Application is updated name: '.$name.' value: '.$value;
     }
 
     public function updatingName($name,$value){
-        $this->infos[] = 'Application is updating name...';
+        $this->infos[] = 'Application is updating name... '.$name.' value: '.$value;
     }
 
     public function updatedName($name,$value){
-        $this->infos[] = 'Application is updated name...';
+        $this->infos[] = 'Application is updated name... '.$name.' value: '.$value;
     }
 
     public function render()
